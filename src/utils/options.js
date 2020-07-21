@@ -139,7 +139,7 @@ class Options {
     } else if (process.windowsStore) {
       build = 'winstore';
     }
-    const arch = process.env.arch ? process.env.arch : process.arch;
+    const arch = process.env.ARCH ? process.env.ARCH : process.arch;
     return `${build}-${arch}`;
   }
 
