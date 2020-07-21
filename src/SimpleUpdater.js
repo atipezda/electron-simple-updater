@@ -111,7 +111,8 @@ class SimpleUpdater extends EventEmitter {
       opt.url,
       opt.build,
       opt.channel,
-      opt.version
+      opt.version,
+      this.logger
     )
       .then((updateMeta) => {
         if (updateMeta) {
