@@ -9,8 +9,6 @@
     "test:full": "npm run test && npm run lint && npm run test:e2e",
     "lint": "eslint src && tsc --noEmit",
     "postversion": "git push && git push --tags",
-    "preversion": "npm run test:full",
-    "prepack": "npm run test:full"
   },
   "typings": "src/index.d.ts",
   "repository": "megahertz/electron-simple-updater",
